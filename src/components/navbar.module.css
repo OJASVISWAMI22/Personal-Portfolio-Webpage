@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.73rem;
+  margin: 0 1.82%;
+  margin-bottom: 0.73rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo h1 {
+  padding: 0 0.73rem;
+  font-size: clamp(1.28rem, 3.2vw, 1.92rem);
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.09rem;
+  font-size: clamp(0.64rem, 1.6vw, 0.96rem);
+  flex-wrap: wrap;
+}
+
+.connect {
+  padding: 0.36rem 0.73rem;
+  border-radius: 18.18px;
+  color: white;
+  font-size: clamp(0.56rem, 1.28vw, 0.8rem);
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  cursor: pointer;
+  transition: 0.36s;
+  white-space: nowrap;
+}
+
+.connect:hover {
+  transform: scale(1.036);
+}
+
+.navbar li {
+  font-size: clamp(0.72rem, 1.6vw, 1.12rem);
+  padding-bottom: 1.46px;
+  transition: 0.22s;
+}
+
+.navbar li:hover {
+  transform: scale(1.072);
+  cursor: pointer;
+  background: linear-gradient(90deg, #009245 5.06%, #FCEE21 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1.46px solid #FFA500;
+}
+
+.underline {
+  border-bottom: 1.46px solid #FFA500;
+}
+
+.hr {
+  width: 90.36%;
+  margin-left: 4.18%;
+  border: 0.73px solid #B923E1;
+  margin-bottom: 0.73rem;
+}
+
+@media (max-width: 558px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.73rem;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .connect {
+    margin-top: 0.73rem;
+  }
+}
+
+@media (max-width: 349px) {
+  .navbar {
+    margin: 0 0.73%;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.36rem;
+  }
+
+  .connect {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hr {
+    width: 71.27%;
+    margin-left: 0.73%;
+  }
+}

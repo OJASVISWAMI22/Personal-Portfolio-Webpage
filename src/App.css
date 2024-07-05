@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding:0;
+  cursor: default;
+}
+body{
+  height: 100vh;
+  background:#161513;
+  color: white;
+  font-family: 'outfit';
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.anchor-link{
+  text-decoration: none;
+  color: white;
+}
+.tag{
+  width: 96%;
+  margin-left: 2%;
+  border: 1px solid rgb(72, 71, 71);
+}

@@ -1,0 +1,14 @@
+.btn{
+  font-size: 40px;
+  position: fixed;
+  right: 50px;
+  opacity: 0.3;
+}
+.btn:hover{
+  opacity: 0.5;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+#navbar{
+  display: none;
+}
