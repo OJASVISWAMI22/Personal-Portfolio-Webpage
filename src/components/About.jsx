@@ -1,7 +1,6 @@
 import style from "./About.module.css";
 import theme from "../assets/theme_pattern.svg";
 import profileimg from "../assets/image.jpg";
-import { FaArrowUpZA } from "react-icons/fa6";
 import { useContext } from "react";
 import { UserContext } from "../store/store";
 import linkedin from "../assets/LinkedIn.png";
@@ -23,7 +22,7 @@ const About = () => {
         <div className={style.right}>
           <div className={style.para}>
             <p>
-            I am a B.Tech student at NIT Kurukshetra pursuing a degree in ECE with a strong passion for web development. My diligence and motivation drive me to contribute to cutting-edge projects in the digital sphere. I possess a solid foundation in React and frontend development and am eager to leverage my technical skills to make an impact.
+            I am a B.Tech student at NIT Kurukshetra pursuing a degree in ECE with a strong passion for web development. My diligence and motivation drive me to contribute to cutting-edge projects in the digital sphere. I possess a solid foundation in MERN Stack development and am eager to leverage my technical skills to make an impact.
             </p>
             <p>
               I continually expand my skill set to embrace emerging technologies
@@ -33,25 +32,24 @@ const About = () => {
           <div className={style.allskills}>
             <div className={style.skills}>
               <div className={style.skill}>
-                <p> Front-End Development </p>
+                <p> MERN Stack Development </p>
                 <hr style={{ width: "50%" }} />{" "}
               </div>
               <div className={style.skill}>
-                <p> React.Js </p>
-                <hr style={{ width: "60%" }} />{" "}
-              </div>
-              <div className={style.skill}>
-                <p> Version Control </p>
+                <p> SQL & Database Management </p>
                 <hr style={{ width: "50%" }} />{" "}
               </div>
               <div className={style.skill}>
-                <p> Chrome Extension Development </p>
+                <p> Data Structures & ALgo . </p>
+                <hr style={{ width: "50%" }} />{" "}
+              </div>
+              <div className={style.skill}>
+                <p> RESTFUL API development </p>
                 <hr style={{ width: "50%" }} />{" "}
               </div>
             </div>
             <center><div className={style.showmore} onClick={showmore}>
               <h2>Show More </h2>
-              <FaArrowUpZA className={style.icon}/>
             </div></center>
           </div>
         </div>

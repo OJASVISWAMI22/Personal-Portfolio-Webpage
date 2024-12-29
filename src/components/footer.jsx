@@ -19,9 +19,9 @@ const Footer = () => {
       </div>
       <hr />
       <div className={style.bottom}>
-        <p className={style.bleft}>© OJASVI SWAMI ,2024. All rights reserved.</p>
+        <p className={style.bleft}>© OJASVI SWAMI ,2024.</p>
         <div className={style.bright}>
-          
+        All rights reserved.
         </div>
       </div>
     </div>

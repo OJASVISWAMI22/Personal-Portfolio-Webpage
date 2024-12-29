@@ -52,15 +52,14 @@
 .closeButton {
   position: absolute;
   top: 2vh;
-  right: 4vw;
+  right: 7vw;
   font-size: 2.5vw;
   font-weight: 600;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  color: azure;
+  color: rgb(40, 42, 42);
 }
-
 .closeButton:hover {
   transform: scale(1.3);
   transition: 0.3s;
