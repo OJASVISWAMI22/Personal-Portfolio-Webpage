@@ -1,7 +1,9 @@
+import React from 'react';
 import style from "./mywork.module.css";
 import theme from "../assets/theme_pattern.svg";
 import datas from "../assets/mywork_data.js";
 import arrow from "../assets/arrow_icon.svg";
+
 const Work = () => {
   return (
     <div id="Work" className={style.work}>
@@ -11,12 +13,17 @@ const Work = () => {
       </div>
       <div className={style.contain}>
         {datas.map((data, index) => (
-          <div key={index} className="project-item">
+          <div key={index} className={style.project_wrapper}>
             <a href={data.w_link} target="_main">
-            <img
-              src={data.w_img}
-              alt={`Project ${data.w_no}: ${data.w_name}`}
-            />
+              <img
+                src={data.w_img}
+                alt={`Project ${data.w_no}: ${data.w_name}`}
+              />
+              <div className={style.project_overlay}>
+                <div className={style.project_name}>
+                  {data.w_name}
+                </div>
+              </div>
             </a>
           </div>
         ))}
@@ -30,4 +37,5 @@ const Work = () => {
     </div>
   );
 };
+
 export default Work;

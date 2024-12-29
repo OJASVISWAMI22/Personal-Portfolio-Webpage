@@ -1,4 +1,3 @@
-
 .title{
   position: relative;
 }
@@ -31,6 +30,12 @@
   width: 80%;
 }
 
+/* Add wrapper for image and overlay */
+.project_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .contain img {
   box-sizing: border-box;
   width: 100%;
@@ -50,6 +55,41 @@
   border-radius: 10px;
   transition: 0.3s;
   opacity: 1;
+}
+
+/* New styles for project name overlay */
+.project_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+.project_wrapper:hover .project_overlay {
+  opacity: 1;
+}
+
+.project_name {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-weight: 500;
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+
+.project_wrapper:hover .project_name {
+  transform: translateY(0);
 }
 
 .more {
